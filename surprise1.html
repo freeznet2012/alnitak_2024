@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Happy Birthday Jesseeeee</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
+    <style>
+        .surprise-button {
+            border-radius: 15px;
+            width: 20%;
+            height: 60px;
+            background-color: #1abc9c;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            /* Remove default border */
+            outline: none;
+            /* Remove outline on focus */
+        }
+
+        .surprise-button:hover {
+            background-color: #16a085;
+            /* Darker shade for hover */
+            box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .surprise-button:active {
+            position: relative;
+            top: 2px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .input-text {
+            width: 100%;
+            /* Full width */
+            padding: 12px 20px;
+            /* Padding inside the input */
+            margin: 8px 0;
+            /* Margin around the input */
+            display: inline-block;
+            /* Aligns the input correctly with other elements */
+            border: 1px solid #ccc;
+            /* Light grey border */
+            border-radius: 4px;
+            /* Rounded corners */
+            box-sizing: border-box;
+            /* Ensures padding doesn't affect the overall width */
+            font-size: 16px;
+            /* Readable font size */
+            transition: border-color 0.3s, box-shadow 0.3s;
+            /* Smooth transition for focus effect */
+        }
+
+        .input-text:focus {
+            border-color: #4CAF50;
+            /* Changes border color to green when focused */
+            box-shadow: 0 0 8px 0 rgba(0, 128, 0, 0.2);
+            /* Adds a subtle shadow around the input when focused */
+        }
+
+        .clue {
+            display: none;
+            color: blue;
+            font-style: italic;
+        }
+
+        .clue-btn {
+            background-color: #f0f0f0;
+            border: none;
+            color: black;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+    </style>
+
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container" style="justify-content: space-around; text-transform: none;">
+            <a class="navbar-brand">Happy Birthday My Dear Jesseeeee<sup>10</sup></a>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column" style="text-align: left;">
+            <!-- Masthead Avatar Image-->
+            <p class="masthead-subheading font-weight-light mb-0">Q: Let's start worth something simple. There are two
+                questions. Both answers are numbers. Add both number and the result is password.</p>
+            <br>
+            <div>
+                <p class="masthead-subheading font-weight-light mb-0">1. What according to PB is JV's height in
+                    centimeter?
+                    <button class="clue-btn" onclick="showClue('clue1')">Show Clue</button>
+                    <span id="clue1" class="clue">it has a decimal point.</span>
+                </p>
+                <p class="masthead-subheading font-weight-light mb-0">2. What will be PB's weight in Kg if he needs to
+                    have a BMI of 25?
+                    <button class="clue-btn" onclick="showClue('clue2')">Show Clue</button>
+                    <span id="clue2" class="clue">current height of PB and required weight has no decimal points.</span>
+                </p>
+            </div>
+            <input type="text" id="passwordInput" placeholder="Enter password" class="input-text">
+        </div>
+    </header>
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="hiddenDiv" style="display:none;">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Congrats!!!</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center" style="display: flex; flex-direction: column; align-items: center;">
+                <div>
+                    <div style="  text-align: center; /* Center horizontally */">
+                        <img class="masthead-avatar mb-5" src="assets/img/weight.jpg" alt="..." style="width: 30%;" />
+                    </div>
+                    <p class="lead" style="text-align: center;">
+                        Ya, I know this is not a lot, but this time, I worked hard last 14 days to show you this and
+                        especially without the fasting things that you hate.
+                        Just exercise and good food and work only till 7:30pm.
+                    </p>
+                    <p class="lead" style="text-align: center;">But let me give you a small bonus since you came till
+                        this point.
+                    </p>
+
+                </div>
+                <div style="    display: flex;
+                justify-content: center;">
+                    <a href="bonus.html" class="surprise-button-link" style="width: 100%; text-align: center;">
+                        <button class="surprise-button" onclick="location.href='bonus.html'">Let's go to Bonus</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script>
+        document.getElementById('passwordInput').addEventListener('input', function () {
+            var inputValue = this.value;
+            var hiddenDiv = document.getElementById('hiddenDiv');
+            if (inputValue === '239.5') {
+                hiddenDiv.style.display = 'block';
+                window.scrollTo(0, document.body.scrollHeight);
+            } else {
+                hiddenDiv.style.display = 'none';
+            }
+        });
+        function showClue(clueId) {
+            var clue = document.getElementById(clueId);
+            if (clue.style.display === "none" || clue.style.display === "") {
+                clue.style.display = "inline";
+            } else {
+                clue.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
